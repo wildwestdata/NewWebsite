@@ -1,0 +1,49 @@
+<html>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/all.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/0dfdec2c7e.js"></script>
+<head>
+    <link rel="icon" type="image/png" sizes="300x300" href="./img/logo.png">
+    <title>Wild West - GTA V Roleplay Server</title>
+    <meta name="description" content="Wild West - GTA V Roleplay Server">
+    <meta name="keywords" content="wild west, wild, west, gta v, grand theft auto, gta, elite, lineage, lineage ii, lineage 2,">
+</head>
+
+<div class="logo">Wild West</div>
+<img class="backguy" style="bottom: 0vw; left: 67vw; top: unset;" src="./img/logo.png">
+
+<ul class="menu">
+    <li class="menuitem" onclick="openLink('start')">Start</li>
+    <li class="menuitem" onclick="openLink('about')">About</li>
+    <li class="menuitem" onclick="openLink('rules')">Rules</li>
+    <li class="menuitem" onclick="openLink('contact')" style="border-color: #ff0000">Contact</li>
+    <li class="menuitem" onclick="openLink('partner')">Partner</li>
+</ul>
+
+<div class="maintext">
+
+    <form method="post" action="php/contact.php">
+
+        <p>Name*</p>
+        <p><input type="text" name="username" required></p>
+
+        <p>Subject</p>
+        <p><input type="text" name="subject"></p>
+
+        <p>E-Mail-Adress*</p>
+        <p><input type="email" name="email" required></p>
+
+        <p>Message*</p>
+        <p><textarea name="body" required></textarea ></p >
+    
+        <p >
+        <input type="submit" name="submit" value="Submit" >
+        </p >
+    
+    </form >
+    
+</div>
+</html>
